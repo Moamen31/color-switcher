@@ -14,7 +14,6 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* padding-bottom: 80px; */
     background-color: var(--main-color);
 }
 
@@ -35,7 +34,6 @@
 
 .color-switcher{
     position: fixed;
-    /* right: 10px; */
     right: -200px;
     top: 25px;
     width: 200px;
@@ -51,7 +49,7 @@
 .color-switcher .switcher-btn{
     position: absolute;
     top: 0;
-    left: -40px;
+    left: -38px;
     font-size: 20px;
     color: var(--main-color);
     cursor: pointer;
@@ -85,8 +83,8 @@
 }
 .theme-buttons{
     display: block;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     margin: 3px;
     cursor: pointer;
