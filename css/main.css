@@ -1,0 +1,86 @@
+:root{
+    --main-color: #8e44ad;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* padding-bottom: 80px; */
+    background-color: var(--main-color);
+}
+
+.container  h1{
+    color: var(--main-color);
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-size: 80px;
+    padding: 25px;
+}
+.color-switcher{
+    position: fixed;
+    /* right: 10px; */
+    right: -200px;
+    top: 25px;
+    width: 200px;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 0 6px 6px 6px;
+}
+.color-switcher.open{
+    right: 10px;
+}
+.color-switcher .switcher-btn{
+    position: absolute;
+    top: 0;
+    left: -40px;
+    font-size: 20px;
+    color: var(--main-color);
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.switcher-btn.play i{
+    animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.color-switcher h3{
+    color: var(--main-color);
+    border-bottom: 1px solid #3333;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 5px 0;
+    text-align: center;
+}
+.theme-buttons-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.theme-buttons{
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 3px;
+    cursor: pointer;
+}
